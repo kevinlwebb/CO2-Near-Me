@@ -2,10 +2,14 @@
 *CO<sub>2</sub> Map and API*
 
 ## Overview
-**CO<sub>2</sub> Near Me** is a simple map with an accompanying API that has updated data on CO<sub>2</sub> values from devices all over the world. Embedded Devices can send data to the provided endpoint, and the map will display the location alongisde the CO<sub>2</sub> value. As the the application is built out, the API will be able to take in longitude and latitude values and give back specific values for the area.
+**CO<sub>2</sub> Near Me** is a web application that has a map with an accompanying API that utilizes collected CO<sub>2</sub> data from devices all over the world. Embedded Devices can send data to the provided endpoint, and the map will display the location alongside the CO<sub>2</sub> value. As the the application is built out, the API will be able to take in longitude and latitude values and give back specific values for the area.
 
 ## Website
 https://co2nearme.herokuapp.com/
+- Deleted
+
+## DEVPOST
+https://devpost.com/software/co2-near-me
 
 ## File Layout
 
@@ -35,6 +39,7 @@ https://co2nearme.herokuapp.com/
 - Switch from saving / loading dictionary to database
 - Take lon and lat input from GET and return nearby values
 - Introduce ML
+- Add API Documentation
 
 ## Resources
 - [Flask and Leaflet](https://programminghistorian.org/en/lessons/mapping-with-python-leaflet)
