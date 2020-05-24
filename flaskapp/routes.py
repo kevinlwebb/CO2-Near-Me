@@ -12,11 +12,6 @@ import pandas as pd
 def index():
     return render_template('index.html')
 
-@app.route('/geo')
-def geo():
-
-    return geojson
-
 @app.route('/current')
 def current():
     df = pd.DataFrame(machines).T
