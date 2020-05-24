@@ -1,11 +1,14 @@
 # CO<sub>2</sub> Near Me
-### CO<sub>2</sub> Map and API
+*CO<sub>2</sub> Map and API*
 
 ## Overview
-**CO<sub>2</sub> Near Me** is a simple map with an accompanying API. Embedded Devices can send data to the provided endpoint, and the map will display the location alongisde the CO<sub>2</sub> value.  As the the application is built out, the API will be able to take in longitude and latitude values and give back specific values for the area.
+**CO<sub>2</sub> Near Me** is a simple map with an accompanying API that has updated data on CO<sub>2</sub> values from devices all over the world. Embedded Devices can send data to the provided endpoint, and the map will display the location alongisde the CO<sub>2</sub> value. As the the application is built out, the API will be able to take in longitude and latitude values and give back specific values for the area.
+
+## Website
+https://co2nearme.herokuapp.com/
 
 ## Terms
-- **eCO<sub>2</sub>** (equivalent calculated carbon-dioxide) concentration within a range of 400 to 8192 parts per million (ppm)
+- **eCO<sub>2</sub>** (equivalent calculated carbon-dioxide): concentration within a range of 400 to 8192 parts per million (ppm)
 
 ## To Do
 - Create different icons for bad and good CO2 values 
