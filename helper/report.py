@@ -2,7 +2,7 @@ import uuid
 import requests
 import geocoder
 
-from random import randint
+from random import randint, uniform
 
 def sendCO2(value, URL, lon, lat, name):
     data = {'lon': lon,
