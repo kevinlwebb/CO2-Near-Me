@@ -7,6 +7,26 @@
 ## Website
 https://co2nearme.herokuapp.com/
 
+## File Layout
+
+    .
+    ├── flaskapp
+    │   ├── __init__.py                      # Flask file that runs app
+    │   ├── routes.py                        # Flask file that contains endpoints
+    │   ├── data
+    │   │   └── machines.pkl                 # Pickle file of devices dictionary 
+    │   ├── templates   
+    │   │   └── index.html                   # Map page of web app
+    │   └── static   
+    |
+    ├── helper
+    │   ├── raspsetup                        # Script that installs needed libraries  
+    │   └── report.py                        # Python script that sends data from device
+    ├── Procfile                             # Specifies commands executed on startup
+    ├── run.py                               # Entry point for the application
+    └── requirements.txt                     # List of libraries to be installed
+
+
 ## Terms
 - **eCO<sub>2</sub>** (equivalent calculated carbon-dioxide): concentration within a range of 400 to 8192 parts per million (ppm)
 
