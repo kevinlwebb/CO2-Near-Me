@@ -6,3 +6,4 @@ descartes
 flask
 gunicorn
 joblib
+geocoder

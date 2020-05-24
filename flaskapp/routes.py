@@ -5,10 +5,6 @@ from joblib import dump
 
 import geopandas as gpd
 import pandas as pd
-import geocoder
-
-
-myloc = geocoder.ip('me')
 
 
 @app.route('/')
@@ -23,13 +19,12 @@ def geo():
 
 @app.route('/current')
 def current():
-    current = gpd.GeoDataFrame(geometry=gpd.points_from_xy([myloc.latlng[1]],[myloc.latlng[0]]))
-    current['geometry'] = current.geometry.buffer(0.02)
-
     df = pd.DataFrame(machines).T
     df.lon = df.lon.astype('float')
     df.lat = df.lat.astype('float')
     gdf = gpd.GeoDataFrame(df, geometry=gpd.points_from_xy(df.lon,df.lat))
+
+    #gdf['geometry'] = gdf.geometry.buffer(0.002)
 
     print(gdf.to_json())
 
