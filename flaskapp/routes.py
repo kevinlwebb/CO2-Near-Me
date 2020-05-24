@@ -1,6 +1,6 @@
 from flaskapp import app
 from flask import render_template, request
-from flaskapp import geojson, machines, machine_path
+from flaskapp import machines, machine_path
 from joblib import dump
 
 import geopandas as gpd

@@ -10,10 +10,6 @@ app = Flask(__name__)
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
-geo_path = os.path.join(basedir, 'data/census.geojson')
-with open(geo_path) as f:
-    geojson = json.load(f)
-
 machine_path = os.path.join(basedir, 'data/machines.pkl')
 if path.exists(machine_path):
     machines = load(machine_path)
